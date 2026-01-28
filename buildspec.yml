@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - aws s3 sync build/ s3://neha-react-app-s3-bucket-123
-      - aws cloudfront create-invalidation --distribution-id EWHB9ZI7W9EKZ --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E3PY7N86IPLMK --paths "/*"
 artifacts:
   files: '**/*'
   base-directory: build
